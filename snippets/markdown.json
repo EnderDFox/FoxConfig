@@ -1,0 +1,9 @@
+{
+	"code csharp": {
+		"prefix": "cs",
+		"body": [
+			"``` csharp"
+		],
+		"description": "code csharp"
+	}
+}

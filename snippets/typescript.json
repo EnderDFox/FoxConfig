@@ -1,0 +1,225 @@
+{
+	"debugLog": {
+		"prefix": "debugLog",
+		"body": [
+			"console.log(\"[log]\",$0);"
+		],
+		"description": "debug log"
+	},
+	"debugDebug": {
+		"prefix": "debugDebug",
+		"body": [
+			"console.log(\"[debug]\",$0);"
+		],
+		"description": "debug Debug"
+	},
+	"debugInfo": {
+		"prefix": "debugInfo",
+		"body": [
+			"console.log(\"[info]\",$0);"
+		],
+		"description": "debug Info"
+	},
+	"debugWarn": {
+		"prefix": "debugWarn",
+		"body": [
+			"console.log(\"[warn]\",$0);"
+		],
+		"description": "debug Warn"
+	},
+	"debugError": {
+		"prefix": "debugError",
+		"body": [
+			"console.log(\"[error]\",$0);"
+		],
+		"description": "debug Error"
+	},
+	"debugFatal": {
+		"prefix": "debugFatal",
+		"body": [
+			"console.log(\"[fatal]\",$0);"
+		],
+		"description": "debug Fatal"
+	},
+	"number": {
+		"prefix": "num",
+		"body": [
+			"number"
+		],
+		"description": "number"
+	},
+	"callback": {
+		"prefix": "cb",
+		"body": [
+			"callback"
+		],
+		"description": "callback"
+	},
+	"fairygui": {
+		"prefix": "fg",
+		"body": [
+			"fairygui."
+		],
+		"description": "fairygui"
+	},
+	"GComponent": {
+		"prefix": "GComp",
+		"body": [
+			"GComponent"
+		],
+		"description": "GComponent"
+	},
+	"fori": {
+		"prefix": "fori",
+		"body": [
+			"for (let i = 0; i < ${1:array}.length; i++) {",
+			"\tlet item:$0 = ${1:array}[i];",
+			"}"
+		],
+		"description": "fori"
+	},
+	"forof": {
+		"prefix": "forof",
+		"body": [
+			"for (let item:${1:item} of ${2:object}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "forof"
+	},
+	"publicstatic": {
+		"prefix": "ps",
+		"body": [
+			"public static $0"
+		],
+		"description": "public static "
+	},
+	"constructorview": {
+		"prefix": "cv",
+		"body": [
+			"public view:${1};",
+			"constructor(view:${1}){",
+			"\tsuper(view);",
+			"\tthis.view = view;${0}",
+			"}",
+			"public dispose():void{",
+			"\tif(this.view!=null){",
+			"\t\tthis.view.dispose();",
+			"\t\tthis.view = null;",
+			"\t}",
+			"\tsuper.dispose();",
+			"}"
+		],
+		"description": "constructor(view:"
+	},
+	"constructorowner": {
+		"prefix": "co",
+		"body": [
+			"public owner:${1};",
+			"constructor(owner:${1}){",
+			"\tthis.owner = owner;",
+			"}"
+		],
+		"description": "constructor(owner:"
+	},
+	"require": {
+		"prefix": "req0",
+		"body": [
+			"require(\"${1}\");\r",
+			"${0}"
+		],
+		"description": ""
+	},
+	"single instance": {
+		"prefix": "si",
+		"body": [
+			"private static _si: ${1};",
+			"public static get si(): ${1} {",
+			"\tif (${1}._si == null) {",
+			"\t\t${1}._si = new ${1}();",
+			"\t}",
+			"\treturn ${1}._si;",
+			"}"
+		],
+		"description": ""
+	},
+	"ValueOfVars": {
+		"prefix": "vov",
+		"body": [
+			"${1},\"`${1}`\"${0}"
+		],
+		"description": ""
+	},
+	"public method": {
+		"prefix": "pm",
+		"body": [
+			"public ${2:methodName}(${3:args}):${1:void}{",
+			"\t${0}",
+			"}"
+		],
+		"description": ""
+	},
+	"private method": {
+		"prefix": "prim",
+		"body": [
+			"private ${2:methodName}(${3:args}):${1:void}{",
+			"\t${0}",
+			"}"
+		],
+		"description": ""
+	},
+	"public var": {
+		"prefix": "pv",
+		"body": [
+			"public ${2:varName}:${1:string}${0};"
+		],
+		"description": ""
+	},
+	"private var": {
+		"prefix": "priv",
+		"body": [
+			"private ${2:varName}:${1:string}${0};"
+		],
+		"description": ""
+	},
+	"public static method": {
+		"prefix": "psm",
+		"body": [
+			"public static ${2:methodName}(${3:args}):${1:void}{",
+			"\t${0}",
+			"}"
+		],
+		"description": ""
+	},
+	"return null": {
+		"prefix": "rn",
+		"body": [
+			"return ${1:null};",
+			"${0}"
+		],
+		"description": ""
+	},
+	"return false": {
+		"prefix": "rf",
+		"body": [
+			"return ${1:false};",
+			"${0}"
+		],
+		"description": ""
+	},
+	"return true": {
+		"prefix": "rt",
+		"body": [
+			"return ${1:true};",
+			"${0}"
+		],
+		"description": ""
+	},
+	"method force end": {
+		"prefix": "mfe",
+		"body": [
+			"bool tempVar=false;if(tempVar==false) return;"
+		],
+		"description": ""
+	},
+}

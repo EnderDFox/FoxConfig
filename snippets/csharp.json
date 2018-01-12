@@ -1,0 +1,266 @@
+{
+	"callback": {
+		"prefix": "cb",
+		"body": [
+			"callback"
+		],
+		"description": "callback"
+	},
+	"summary": {
+		"prefix": "summary",
+		"body": [
+			"/// <summary>${0}</summary>"
+		],
+		"description": "summary"
+	},
+	"summary multiple line": {
+		"prefix": "summarymultipleline",
+		"body": [
+			"/// <summary>\r",
+			"/// ${1}${0}",
+			"/// <param name=\"${2}\">${3}</param>",
+			"/// </summary>"
+		],
+		"description": "summary multiple line"
+	},
+	"pom": {
+		"prefix": "pom",
+		"body": [
+			"public override void ${1}(){",
+			"\tbase.${1}();",
+			"\t${0}",
+			"}"
+		],
+		"description": "pom"
+	},
+	"cbcall": {
+		"prefix": "cbcall",
+		"body": [
+			"if(${1:callback}!=null){",
+			"\t${1:callback}(${2});",
+			"\t${1:callback} = null;",
+			"}",
+			"${0}"
+		],
+		"description": "cbcall"
+	},
+	"Dispose Object": {
+		"prefix": "dis_obj",
+		"body": [
+			"void Dispose_${1:name}()\r",
+			"{\r",
+			"\tif (${1:name} != null)\r",
+			"\t{\r",
+			"\t\t${1:name}.Dispose();\r",
+			"\t\t${1:name} = null;\r",
+			"\t}\r",
+			"}"
+		],
+		"description": "Dispose Object"
+	},
+	"Dispose Null": {
+		"prefix": "dis_null",
+		"body": [
+			"if (${1:name} != null)\r",
+			"{\r",
+			"\t${1:name}.Dispose();\r",
+			"\t${1:name} = null;\r",
+			"}"
+		],
+		"description": "Dispose Object"
+	},
+	"override dispose": {
+		"prefix": "odispose",
+		"body": [
+			"public override void Dispose(){",
+			"\t${0}",
+			"\tbase.Dispose();",
+			" }"
+		],
+		"description": ""
+	},
+	"vf": {
+		"prefix": "vf",
+		"body": [
+			"${1}.visible = false;",
+			"${0}"
+		],
+		"description": ""
+	},
+	"vt": {
+		"prefix": "vt",
+		"body": [
+			"${1}.visible = true;",
+			"${0}"
+		],
+		"description": ""
+	},
+	"debugLog": {
+		"prefix": "debugLog",
+		"body": [
+			"DebugN3.Log(${0});"
+		],
+		"description": "debugLog"
+	},
+	"debugDebug": {
+		"prefix": "debugDebug",
+		"body": [
+			"DebugN3.Debug(${0});"
+		],
+		"description": "debugDebug"
+	},
+	"debugInfo": {
+		"prefix": "debugInfo",
+		"body": [
+			"DebugN3.Info(${0});"
+		],
+		"description": "debugInfo"
+	},
+	"debugWarn": {
+		"prefix": "debugWarn",
+		"body": [
+			"DebugN3.Warn(${0});"
+		],
+		"description": "debugWarn"
+	},
+	"debugError": {
+		"prefix": "debugError",
+		"body": [
+			"DebugN3.Error(${0});"
+		],
+		"description": "debugError"
+	},
+	"debugFatal": {
+		"prefix": "debugFatal",
+		"body": [
+			"DebugN3.Fatal(${0});"
+		],
+		"description": "debugFatal"
+	},
+	"ValueOfVars": {
+		"prefix": "vov",
+		"body": [
+			"${1},\"{${1}}\"${0}"
+		],
+		"description": ""
+	},
+	"getter/setter":{
+		"prefix": "gs",
+		"body": [
+			"${2:type} _${1:name} = ${3:default};\r",
+			"public ${2:type} ${1:name}\r",
+			"{\r",
+			"\tget { return _${1:name}; }\r",
+			"\tset{\r",
+			"\t\t_${1:name} = value;\r",
+			"\t\t${0}\r",
+			"\t}\r",
+			"}\r"
+		],
+		"description": ""
+	}
+	,
+	"fori":{
+		"prefix": "fori",
+		"body": [
+			"for (int ${1:i} = 0; ${1:i} < ${2:list}.${3:Count|Length}; ${1:i}++)\r",
+            "{\r",
+            "\t${4:var} ${5:item} = ${2:list}[${1:i}];${0}\r",
+            "}\r"
+		],
+		"description": ""
+	},
+	"ifnotnull": {
+		"prefix": "ifnotnull",
+		"body": [
+			"if(${1:object}!=null){",
+			"\t${0}",
+			"}"
+		],
+		"description": "ifnotnull"
+	},
+	"iffalse": {
+		"prefix": "iffalse",
+		"body": [
+			"if(${1:object}==false){",
+			"\t${0}",
+			"}"
+		],
+		"description": "iffalse"
+	},
+	"public method": {
+		"prefix": "pm",
+		"body": [
+			"public ${1:void} ${2:methodName}(${3:args}){",
+			"\t${0}",
+			"}"
+		],
+		"description": ""
+	},
+	"private method": {
+		"prefix": "prim",
+		"body": [
+			"private ${1:void} ${2:methodName}(${3:args}){",
+			"\t${0}",
+			"}"
+		],
+		"description": ""
+	},
+	"public var": {
+		"prefix": "pv",
+		"body": [
+			"public ${1:string} ${2:varName}${0};"
+		],
+		"description": ""
+	},
+	"private var": {
+		"prefix": "priv",
+		"body": [
+			"private ${1:string} ${2:varName}${0};"
+		],
+		"description": ""
+	},
+	"public static method": {
+		"prefix": "psm",
+		"body": [
+			"public static ${1:void} ${2:methodName}(${3:args}){",
+			"\t${0}",
+			"}"
+		],
+		"description": ""
+	},
+	"return null": {
+		"prefix": "rn",
+		"body": [
+			"return ${1:null};",
+			"${0}"
+		],
+		"description": ""
+	},
+	"return false": {
+		"prefix": "rf",
+		"body": [
+			"return ${1:false};",
+			"${0}"
+		],
+		"description": ""
+	},
+	"return true": {
+		"prefix": "rt",
+		"body": [
+			"return ${1:true};",
+			"${0}"
+		],
+		"description": ""
+	},
+	"method force end": {
+		"prefix": "mfe",
+		"body": [
+			"bool tempVar=false;if(tempVar==false) return;"
+		],
+		"description": ""
+	}
+	
+
+	
+}
