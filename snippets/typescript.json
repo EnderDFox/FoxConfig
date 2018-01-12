@@ -1,4 +1,46 @@
 {
+	"consoleLog": {
+		"prefix": "consoleLog",
+		"body": [
+			"console.log(\"[log]\",$0);"
+		],
+		"description": "console log"
+	},
+	"consoleDebug": {
+		"prefix": "consoleDebug",
+		"body": [
+			"console.log(\"[debug]\",$0);"
+		],
+		"description": "console Debug"
+	},
+	"consoleInfo": {
+		"prefix": "consoleInfo",
+		"body": [
+			"console.log(\"[info]\",$0);"
+		],
+		"description": "console Info"
+	},
+	"consoleWarn": {
+		"prefix": "consoleWarn",
+		"body": [
+			"console.log(\"[warn]\",$0);"
+		],
+		"description": "console Warn"
+	},
+	"consoleError": {
+		"prefix": "consoleError",
+		"body": [
+			"console.log(\"[error]\",$0);"
+		],
+		"description": "console Error"
+	},
+	"consoleFatal": {
+		"prefix": "consoleFatal",
+		"body": [
+			"console.log(\"[fatal]\",$0);"
+		],
+		"description": "console Fatal"
+	},
 	"debugLog": {
 		"prefix": "debugLog",
 		"body": [

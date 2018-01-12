@@ -1,8 +1,8 @@
 {
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.codeLens": false,
     "window.menuBarVisibility": "default",
-    "editor.autoClosingBrackets": false,
+    "editor.autoClosingBrackets": true,
     "editor.showFoldingControls": "always",
     "editor.mouseWheelZoom": true,
     "workbench.editor.enablePreview": false,
@@ -26,5 +26,6 @@
     "workbench.colorTheme": "Default Light+",
     "python.disablePromptForFeatures": [
         "pylint"
-    ]
+    ],
+    "move-imports.warnAboutSameContentFiles": false
 }
