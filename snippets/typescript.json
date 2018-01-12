@@ -1,0 +1,134 @@
+{
+	/*
+	 // Place your snippets for TypeScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	 // same ids are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+	"LogDebug": {
+		"prefix": "LogDebug",
+		"body": [
+			"console.log(\"[debug]\",$0);"
+		],
+		"description": "Log Debug"
+	},
+	"LogInfo": {
+		"prefix": "LogInfo",
+		"body": [
+			"console.log(\"[info]\",$0);"
+		],
+		"description": "Log Info"
+	},
+	"LogWarn": {
+		"prefix": "LogWarn",
+		"body": [
+			"console.log(\"[warn]\",$0);"
+		],
+		"description": "Log Warn"
+	},
+	"LogError": {
+		"prefix": "LogError",
+		"body": [
+			"console.log(\"[error]\",$0);"
+		],
+		"description": "Log Error"
+	},
+	"LogFatal": {
+		"prefix": "LogFatal",
+		"body": [
+			"console.log(\"[fatal]\",$0);"
+		],
+		"description": "Log Fatal"
+	},
+	"number": {
+		"prefix": "num",
+		"body": [
+			"number"
+		],
+		"description": "number"
+	},
+	"callback": {
+		"prefix": "cb",
+		"body": [
+			"callback"
+		],
+		"description": "callback"
+	},
+	"GComponent": {
+		"prefix": "GComp",
+		"body": [
+			"GComponent"
+		],
+		"description": "GComponent"
+	},
+	"fairygui": {
+		"prefix": "fg",
+		"body": [
+			"fairygui."
+		],
+		"description": "fairygui"
+	},
+	"fori": {
+		"prefix": "fori",
+		"body": [
+			"for (let i = 0; i < ${1:array}.length; i++) {",
+			"\tlet item:$0 = ${1:array}[i];",
+			"}"
+		],
+		"description": "fori"
+	},
+	"forof": {
+		"prefix": "forof",
+		"body": [
+			"for (let item:${1:item} of ${2:object}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "forof"
+	},
+	"publicstatic": {
+		"prefix": "ps",
+		"body": [
+			"public static $0"
+		],
+		"description": "public static "
+	},
+	"constructorview": {
+		"prefix": "cv",
+		"body": [
+			"public view:${1};",
+			"constructor(view:${1}){",
+			"\tsuper(view);",
+			"\tthis.view = view;${0}",
+			"}",
+			"public dispose():void{",
+			"	if(this.view!=null){",
+			"		this.view.dispose();",
+			"		this.view = null;",
+			"	}",
+			"	super.dispose();",
+			"}"
+		],
+		"description": "constructor(view:"
+	},
+	"constructorowner": {
+		"prefix": "co",
+		"body": [
+			"public owner:${1};",
+			"constructor(owner:${1}){",
+			"\tthis.owner = owner;",
+			"}"
+		],
+		"description": "constructor(owner:"
+	}
+
+}
