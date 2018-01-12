@@ -1,0 +1,2 @@
+# FoxConfig
+Fox's Config
