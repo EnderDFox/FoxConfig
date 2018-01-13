@@ -114,20 +114,22 @@
 	"fori": {
 		"prefix": "fori",
 		"body": [
-			"for (let i = 0; i < ${1:array}.length; i++) {",
-			"\tlet item:$0 = ${1:array}[i];",
+			"for (let ${1:i} = 0; ${1:i} < ${2:array}.length; ${1:i}++) {",
+			"\tlet ${3:item} = ${2:array}[${1:i}];",
+			"\t${3:item}${0}",
 			"}"
 		],
 		"description": "fori"
 	},
-	"forof": {
-		"prefix": "forof",
+	"forr":{
+		"prefix": "forr",
 		"body": [
-			"for (let item:${1:item} of ${2:object}) {",
-			"\t$0",
+			"for (let ${1:i} = ${2:array}.length-1; ${1:i} >=0; ${1:i}--) {",
+			"\tlet ${3:item} =  ${2:array}[${1:i}];",
+			"\t${3:item}${0}",
 			"}"
 		],
-		"description": "forof"
+		"description": ""
 	},
 	"publicstatic": {
 		"prefix": "ps",
@@ -173,7 +175,7 @@
 		"description": ""
 	},
 	"single instance": {
-		"prefix": "si",
+		"prefix": "singleInstance1",
 		"body": [
 			"private static _si: ${1};",
 			"public static get si(): ${1} {",
@@ -182,6 +184,13 @@
 			"\t}",
 			"\treturn ${1}._si;",
 			"}"
+		],
+		"description": ""
+	},
+	"single instance 0": {
+		"prefix": "singleInstance",
+		"body": [
+			"private static readonly si: ${1} = new ${1};"
 		],
 		"description": ""
 	},
@@ -263,5 +272,5 @@
 			"bool tempVar=false;if(tempVar==false) return;"
 		],
 		"description": ""
-	},
+	}
 }
