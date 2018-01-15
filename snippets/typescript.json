@@ -105,11 +105,18 @@
 		"description": "fairygui"
 	},
 	"GComponent": {
-		"prefix": "GComp",
+		"prefix": "fgGComp",
 		"body": [
-			"GComponent"
+			"fairygui.GComponent"
 		],
 		"description": "GComponent"
+	},
+	"egret": {
+		"prefix": "eg",
+		"body": [
+			"egret."
+		],
+		"description": ""
 	},
 	"fori": {
 		"prefix": "fori",
@@ -175,22 +182,13 @@
 		"description": ""
 	},
 	"single instance": {
-		"prefix": "singleInstance1",
+		"prefix": "singleInstance",
 		"body": [
 			"private static _si: ${1};",
 			"public static get si(): ${1} {",
-			"\tif (${1}._si == null) {",
-			"\t\t${1}._si = new ${1}();",
-			"\t}",
+			"\tif (!${1}._si) ${1}._si = new ${1}();",
 			"\treturn ${1}._si;",
 			"}"
-		],
-		"description": ""
-	},
-	"single instance 0": {
-		"prefix": "singleInstance",
-		"body": [
-			"private static readonly si: ${1} = new ${1};"
 		],
 		"description": ""
 	},
