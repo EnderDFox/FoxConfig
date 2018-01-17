@@ -98,9 +98,9 @@
 		"description": "callback"
 	},
 	"fairygui": {
-		"prefix": "fg",
+		"prefix": "fg_",
 		"body": [
-			"fairygui."
+			"fairygui"
 		],
 		"description": "fairygui"
 	},
@@ -128,7 +128,7 @@
 		],
 		"description": "fori"
 	},
-	"forr":{
+	"forr": {
 		"prefix": "forr",
 		"body": [
 			"for (let ${1:i} = ${2:array}.length-1; ${1:i} >=0; ${1:i}--) {",
@@ -144,24 +144,6 @@
 			"public static $0"
 		],
 		"description": "public static "
-	},
-	"constructorview": {
-		"prefix": "cv",
-		"body": [
-			"public view:${1};",
-			"constructor(view:${1}){",
-			"\tsuper(view);",
-			"\tthis.view = view;${0}",
-			"}",
-			"public dispose():void{",
-			"\tif(this.view!=null){",
-			"\t\tthis.view.dispose();",
-			"\t\tthis.view = null;",
-			"\t}",
-			"\tsuper.dispose();",
-			"}"
-		],
-		"description": "constructor(view:"
 	},
 	"constructorowner": {
 		"prefix": "co",
@@ -268,6 +250,23 @@
 		"prefix": "mfe",
 		"body": [
 			"bool tempVar=false;if(tempVar==false) return;"
+		],
+		"description": ""
+	},
+	"dispose": {
+		"prefix": "disp",
+		"body": [
+			"public dispose(){",
+			"\t${0}",
+			"\tsuper.dispose();",
+			"}"
+		],
+		"description": ""
+	},
+	"model.battles.*": {
+		"prefix": "mb",
+		"body": [
+			"models.battles${0}"
 		],
 		"description": ""
 	}
