@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.codeLens": false,
     "window.menuBarVisibility": "default",
     "editor.autoClosingBrackets": true,
@@ -27,5 +27,6 @@
     "python.disablePromptForFeatures": [
         "pylint"
     ],
-    "move-imports.warnAboutSameContentFiles": false
+    "move-imports.warnAboutSameContentFiles": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe"
 }

@@ -114,7 +114,14 @@
 	"egret": {
 		"prefix": "eg",
 		"body": [
-			"egret."
+			"egret"
+		],
+		"description": ""
+	},
+	"ege": {
+		"prefix": "ege",
+		"body": [
+			"egret.Event"
 		],
 		"description": ""
 	},
