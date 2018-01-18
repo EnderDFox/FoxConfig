@@ -108,7 +108,11 @@
         "when": "editorHasSelection && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+f",
+        "key": "ctrl+shift+g",
         "command": "editor.action.startFindReplaceAction"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction"
     }
 ]
