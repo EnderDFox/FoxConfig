@@ -1,4 +1,11 @@
 {
+	"this": {
+		"prefix": "tt",
+		"body": [
+			"this."
+		],
+		"description": ""
+	},
 	"consoleLog": {
 		"prefix": "consoleLog",
 		"body": [
