@@ -108,7 +108,7 @@
         "when": "editorHasSelection && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+g",
+        "key": "ctrl+h",
         "command": "editor.action.startFindReplaceAction"
     },
     {
@@ -134,5 +134,9 @@
         "key": "ctrl+oem_plus",
         "command": "-extension.goForward",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
     }
 ]
