@@ -97,6 +97,13 @@
 		],
 		"description": "number"
 	},
+	"int": {
+		"prefix": "int",
+		"body": [
+			"number"
+		],
+		"description": "int"
+	},
 	"callback": {
 		"prefix": "cb",
 		"body": [
@@ -188,10 +195,24 @@
 		],
 		"description": ""
 	},
+	"single instance1": {
+		"prefix": "singleInstance1",
+		"body": [
+			"public static si: ${1} = new ${1}();"
+		],
+		"description": ""
+	},
 	"ValueOfVars": {
 		"prefix": "vov",
 		"body": [
 			"${1},\"`${1}`\"${0}"
+		],
+		"description": ""
+	},
+	"map": {
+		"prefix": "map",
+		"body": [
+			"{[key:${1:number|string}]:${0}} = {};"
 		],
 		"description": ""
 	},
@@ -274,6 +295,13 @@
 			"\t${0}",
 			"\tsuper.dispose();",
 			"}"
+		],
+		"description": ""
+	},
+	"implements IDispose": {
+		"prefix": "iidisp",
+		"body": [
+			"implements IDispose"
 		],
 		"description": ""
 	},

@@ -29,5 +29,6 @@
     ],
     "move-imports.warnAboutSameContentFiles": false,
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
-    "files.autoGuessEncoding": true
+    "files.autoGuessEncoding": true,
+    "workbench.editor.tabSizing": "shrink"
 }
