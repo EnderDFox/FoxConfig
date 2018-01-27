@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "editor.codeLens": false,
     "window.menuBarVisibility": "default",
     "editor.autoClosingBrackets": true,
@@ -16,7 +16,7 @@
     "git.enabled": false,
     "editor.wrappingIndent": "none",
     "editor.wordWrap": "on",
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "off",
     "explorer.confirmDragAndDrop": true,
     "editor.tabSize": 4,
     "workbench.editor.labelFormat": "default",
