@@ -7,7 +7,7 @@
     "editor.mouseWheelZoom": true,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.openPositioning": "right",
+    "workbench.editor.openPositioning": "last",
     "workbench.editor.showTabs": true,
     "window.enableMenuBarMnemonics": true,
     "editor.minimap.enabled": false,
@@ -28,5 +28,6 @@
         "pylint"
     ],
     "move-imports.warnAboutSameContentFiles": false,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe"
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
+    "files.autoGuessEncoding": true
 }
