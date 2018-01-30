@@ -102,7 +102,21 @@
 		"body": [
 			"number"
 		],
-		"description": "int"
+		"description": ""
+	},
+	"implements": {
+		"prefix": "imp",
+		"body": [
+			"implements"
+		],
+		"description": ""
+	},
+	"extends": {
+		"prefix": "ext",
+		"body": [
+			"extends"
+		],
+		"description": ""
 	},
 	"callback": {
 		"prefix": "cb",
@@ -305,10 +319,17 @@
 		],
 		"description": ""
 	},
-	"model.battles.*": {
-		"prefix": "mb",
+	"model.fights.*": {
+		"prefix": "mf",
 		"body": [
-			"models.battles${0}"
+			"models.fights${0}"
+		],
+		"description": ""
+	},
+	"dic": {
+		"prefix": "dic",
+		"body": [
+			"{ [key: ${1:number|string}]: ${2} } = {};${0}"
 		],
 		"description": ""
 	}

@@ -1,0 +1,10 @@
+class #{name}Ctrl extends CtrlBase<fuis.elements_0.UI_#{name}>{
+    //---
+	// dispose() {
+    //    
+	// 	super.dispose();
+	// }
+    init(){
+        super.init();
+    }
+}
