@@ -16,7 +16,7 @@
     "git.enabled": false,
     "editor.wrappingIndent": "none",
     "editor.wordWrap": "on",
-    "files.autoSave": "off",
+    "files.autoSave": "afterDelay",
     "explorer.confirmDragAndDrop": true,
     "editor.tabSize": 4,
     "workbench.editor.labelFormat": "default",
@@ -30,5 +30,6 @@
     "move-imports.warnAboutSameContentFiles": false,
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
     "files.autoGuessEncoding": true,
-    "workbench.editor.tabSizing": "shrink"
+    "workbench.editor.tabSizing": "shrink",
+    "lua.targetVersion": "5.3"
 }
