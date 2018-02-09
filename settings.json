@@ -16,7 +16,7 @@
     "git.enabled": false,
     "editor.wrappingIndent": "none",
     "editor.wordWrap": "on",
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "off",
     "explorer.confirmDragAndDrop": true,
     "editor.tabSize": 4,
     "workbench.editor.labelFormat": "default",
@@ -31,5 +31,8 @@
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
     "files.autoGuessEncoding": true,
     "workbench.editor.tabSizing": "shrink",
-    "lua.targetVersion": "5.3"
+    "lua.targetVersion": "5.3",
+    "typescript.useCodeSnippetsOnMethodSuggest": true,
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
 }
