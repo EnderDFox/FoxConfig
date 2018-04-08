@@ -6,89 +6,47 @@
 		],
 		"description": ""
 	},
-	"consoleLog": {
-		"prefix": "consoleLog",
+	"log.log": {
+		"prefix": "log.log",
 		"body": [
 			"console.log(\"[log]\",$0);"
 		],
 		"description": "console log"
 	},
-	"consoleDebug": {
-		"prefix": "consoleDebug",
+	"log.debug": {
+		"prefix": "log.debug",
 		"body": [
 			"console.log(\"[debug]\",$0);"
 		],
 		"description": "console Debug"
 	},
-	"consoleInfo": {
-		"prefix": "consoleInfo",
+	"log.info": {
+		"prefix": "log.info",
 		"body": [
 			"console.log(\"[info]\",$0);"
 		],
 		"description": "console Info"
 	},
-	"consoleWarn": {
-		"prefix": "consoleWarn",
+	"log.warn": {
+		"prefix": "log.warn",
 		"body": [
 			"console.log(\"[warn]\",$0);"
 		],
 		"description": "console Warn"
 	},
-	"consoleError": {
-		"prefix": "consoleError",
+	"log.error": {
+		"prefix": "log.error",
 		"body": [
 			"console.log(\"[error]\",$0);"
 		],
 		"description": "console Error"
 	},
-	"consoleFatal": {
-		"prefix": "consoleFatal",
+	"log.fatal": {
+		"prefix": "log.fatal",
 		"body": [
 			"console.log(\"[fatal]\",$0);"
 		],
 		"description": "console Fatal"
-	},
-	"debugLog": {
-		"prefix": "debugLog",
-		"body": [
-			"console.log(\"[log]\",$0);"
-		],
-		"description": "debug log"
-	},
-	"debugDebug": {
-		"prefix": "debugDebug",
-		"body": [
-			"console.log(\"[debug]\",$0);"
-		],
-		"description": "debug Debug"
-	},
-	"debugInfo": {
-		"prefix": "debugInfo",
-		"body": [
-			"console.log(\"[info]\",$0);"
-		],
-		"description": "debug Info"
-	},
-	"debugWarn": {
-		"prefix": "debugWarn",
-		"body": [
-			"console.log(\"[warn]\",$0);"
-		],
-		"description": "debug Warn"
-	},
-	"debugError": {
-		"prefix": "debugError",
-		"body": [
-			"console.log(\"[error]\",$0);"
-		],
-		"description": "debug Error"
-	},
-	"debugFatal": {
-		"prefix": "debugFatal",
-		"body": [
-			"console.log(\"[fatal]\",$0);"
-		],
-		"description": "debug Fatal"
 	},
 	"number": {
 		"prefix": "num",
