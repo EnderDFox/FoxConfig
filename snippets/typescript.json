@@ -104,10 +104,17 @@
 		],
 		"description": ""
 	},
-	"ege": {
-		"prefix": "ege",
+	"ee": {
+		"prefix": "ee",
 		"body": [
 			"egret.Event"
+		],
+		"description": ""
+	},
+	"ete": {
+		"prefix": "ete",
+		"body": [
+			"egret.TouchEvent"
 		],
 		"description": ""
 	},
@@ -313,5 +320,35 @@
 			"{ [key: ${1:number|string}]: ${2} } = {};${0}"
 		],
 		"description": ""
-	}
+	},
+	"ARPGFacade": {
+		"prefix": "afs",
+		"body": [
+			"ARPGFacade.si"
+		],
+		"description": ""
+	},
+	"T_System":{
+		"prefix": "t_system",
+		"body": [
+			"class ${1}System implements ISetPool, IInitializeSystem, IExecuteSystem {",
+			"\tprotected pool: entitas.Pool;",
+			"\tprotected group: entitas.Group;",
+			"\tpublic setPool(pool: entitas.Pool) {",
+			"\t\tthis.pool = pool;",
+			"\t\tthis.group = pool.getGroup(entitas.Matcher.allOf(entitas.Matcher.${2}));",
+			"\t}",
+			"\tpublic initialize() {",
+			"\t}",
+			"\tpublic execute() {",
+			"\t\tvar entities = this.group.getEntities();",
+			"\t\tfor (var i = 0, l = entities.length; i < l; i++) {",
+			"\t\t\tvar e = entities[i];",
+			"\t\t\t\t//TODO:",
+			"\t\t}",
+			"\t}",
+			"}"
+		],
+		"description": ""
+	},
 }
