@@ -31,8 +31,10 @@
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
     "files.autoGuessEncoding": true,
     "workbench.editor.tabSizing": "shrink",
-    "lua.targetVersion": "5.3",
     "typescript.useCodeSnippetsOnMethodSuggest": true,
     "go.useCodeSnippetsOnFunctionSuggest": true,
     "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    "symbolOutline.expandNodes": [
+        "Module"
+    ],
 }
