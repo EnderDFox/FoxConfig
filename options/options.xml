@@ -1,6 +1,6 @@
 <application>
   <component name="PropertiesComponent">
-    <property name="KEYMAP" value="line&#10;delete" />
+    <property name="KEYMAP" value="format&#10;forward&#10;back&#10;line&#10;delete" />
     <property name="LayoutCode.optimizeImports" value="true" />
     <property name="evlsprt3.181" value="11" />
     <property name="file.chooser.recent.files" value="C:/fox/AmazingGame/tool_svn" />
