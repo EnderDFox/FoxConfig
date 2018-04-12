@@ -1,0 +1,16 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="KEYMAP" value="line&#10;delete" />
+    <property name="LayoutCode.optimizeImports" value="true" />
+    <property name="evlsprt3.181" value="11" />
+    <property name="file.chooser.recent.files" value="C:/fox/AmazingGame/tool_svn" />
+    <property name="file.gist.reindex.count" value="4" />
+    <property name="go.init.cfg.2" value="true" />
+    <property name="go.init.cfg.line.markers" value="true" />
+    <property name="go.last.update.timestamp" value="1523504517430" />
+    <property name="go.libraries.notification.had.been.shown" value="true" />
+    <property name="go.optimizeImportsByDefault" value="true" />
+    <property name="go.suggest.all.rc.was.enabled.once" value="true" />
+    <property name="ts.lib.d.ts.version" value="2.8.1" />
+  </component>
+</application>
