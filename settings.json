@@ -37,4 +37,5 @@
     "symbolOutline.expandNodes": [
         "Module"
     ],
+    "workbench.startupEditor": "none",
 }
