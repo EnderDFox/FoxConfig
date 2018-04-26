@@ -9,42 +9,42 @@
 	"log.log": {
 		"prefix": "log.log",
 		"body": [
-			"console.log(\"[log]\",$0);"
+			"console.log(\"[log]\",$0)"
 		],
 		"description": "console log"
 	},
 	"log.debug": {
 		"prefix": "log.debug",
 		"body": [
-			"console.log(\"[debug]\",$0);"
+			"console.log(\"[debug]\",$0)"
 		],
 		"description": "console Debug"
 	},
 	"log.info": {
 		"prefix": "log.info",
 		"body": [
-			"console.log(\"[info]\",$0);"
+			"console.log(\"[info]\",$0)"
 		],
 		"description": "console Info"
 	},
 	"log.warn": {
 		"prefix": "log.warn",
 		"body": [
-			"console.log(\"[warn]\",$0);"
+			"console.log(\"[warn]\",$0)"
 		],
 		"description": "console Warn"
 	},
 	"log.error": {
 		"prefix": "log.error",
 		"body": [
-			"console.log(\"[error]\",$0);"
+			"console.log(\"[error]\",$0)"
 		],
 		"description": "console Error"
 	},
 	"log.fatal": {
 		"prefix": "log.fatal",
 		"body": [
-			"console.log(\"[fatal]\",$0);"
+			"console.log(\"[fatal]\",$0)"
 		],
 		"description": "console Fatal"
 	},
@@ -123,7 +123,7 @@
 		"body": [
 			"var len = ${2:array}.length",
 			"for (var ${1:i} = 0; ${1:i} < len; ${1:i}++) {",
-			"\tvar ${3:item} = ${2:array}[${1:i}];",
+			"\tvar ${3:item} = ${2:array}[${1:i}]",
 			"\t${3:item}${0}",
 			"}"
 		],
@@ -133,7 +133,7 @@
 		"prefix": "forr",
 		"body": [
 			"for (var ${1:i} = ${2:array}.length-1; ${1:i} >=0; ${1:i}--) {",
-			"\tvar ${3:item} =  ${2:array}[${1:i}];",
+			"\tvar ${3:item} =  ${2:array}[${1:i}]",
 			"\t${3:item}${0}",
 			"}"
 		],
@@ -144,7 +144,7 @@
 		"body": [
 			"for (var ${1:i} = 0; ${1:i} < ${2:array}.length; ${1:i}++) {",
 			"\tfor (var ${3:j} = 0; ${3:j} < ${2:array}[i].length; ${3:j}++) {",
-			"\t\tvar ${4:item} = ${2:array}[${1:i}][${3:j}];",
+			"\t\tvar ${4:item} = ${2:array}[${1:i}][${3:j}]",
 			"\t\t${4:item}${0}",
 			"\t}",
 			"}"
@@ -155,7 +155,7 @@
 		"prefix": "forin",
 		"body": [
 			"for (var ${1:i} in ${2:arr}) {",
-			"\tvar ${3:item} = ${2:arr}[${1:i}];",
+			"\tvar ${3:item} = ${2:arr}[${1:i}]",
 			"\t${3:item}${0}",
 			"}"
 		],
@@ -171,9 +171,9 @@
 	"constructorowner": {
 		"prefix": "co",
 		"body": [
-			"public owner:${1};",
+			"public owner:${1}",
 			"constructor(owner:${1}){",
-			"\tthis.owner = owner;",
+			"\tthis.owner = owner",
 			"}"
 		],
 		"description": "constructor(owner:"
@@ -189,10 +189,10 @@
 	"single instance": {
 		"prefix": "singleInstance",
 		"body": [
-			"private static _si: ${1};",
+			"private static _si: ${1}",
 			"public static get si(): ${1} {",
-			"\tif (!${1}._si) ${1}._si = new ${1}();",
-			"\treturn ${1}._si;",
+			"\tif (!${1}._si) ${1}._si = new ${1}()",
+			"\treturn ${1}._si",
 			"}"
 		],
 		"description": ""
@@ -200,7 +200,7 @@
 	"single instance1": {
 		"prefix": "singleInstance1",
 		"body": [
-			"public static si: ${1} = new ${1}();"
+			"public static si: ${1} = new ${1}()"
 		],
 		"description": ""
 	},
@@ -214,7 +214,7 @@
 	"map": {
 		"prefix": "map",
 		"body": [
-			"{[key:${1:number|string}]:${0}} = {};"
+			"{[key:${1:number|string}]:${0}} = {}"
 		],
 		"description": ""
 	},
@@ -239,14 +239,14 @@
 	"public var": {
 		"prefix": "pv",
 		"body": [
-			"public ${2:varName}:${1:string}${0};"
+			"public ${2:varName}:${1:string}${0}"
 		],
 		"description": ""
 	},
 	"private var": {
 		"prefix": "priv",
 		"body": [
-			"private ${2:varName}:${1:string}${0};"
+			"private ${2:varName}:${1:string}${0}"
 		],
 		"description": ""
 	},
@@ -262,7 +262,7 @@
 	"return null": {
 		"prefix": "rn",
 		"body": [
-			"return ${1:null};",
+			"return ${1:null}",
 			"${0}"
 		],
 		"description": ""
@@ -270,7 +270,7 @@
 	"return false": {
 		"prefix": "rf",
 		"body": [
-			"return ${1:false};",
+			"return ${1:false}",
 			"${0}"
 		],
 		"description": ""
@@ -278,7 +278,7 @@
 	"return true": {
 		"prefix": "rt",
 		"body": [
-			"return ${1:true};",
+			"return ${1:true}",
 			"${0}"
 		],
 		"description": ""
@@ -286,7 +286,7 @@
 	"method force end": {
 		"prefix": "mfe",
 		"body": [
-			"bool tempVar=false;if(tempVar==false) return;"
+			"bool tempVar=false;if(tempVar==false) return"
 		],
 		"description": ""
 	},
@@ -295,7 +295,7 @@
 		"body": [
 			"public dispose(){",
 			"\t${0}",
-			"\tsuper.dispose();",
+			"\tsuper.dispose()",
 			"}"
 		],
 		"description": ""
@@ -346,18 +346,18 @@
 		"prefix": "t_system",
 		"body": [
 			"class ${1}System implements ISetPool, IInitializeSystem, IExecuteSystem {",
-			"\tprotected pool: entitas.Pool;",
-			"\tprotected group: entitas.Group;",
+			"\tprotected pool: entitas.Pool",
+			"\tprotected group: entitas.Group",
 			"\tpublic setPool(pool: entitas.Pool) {",
-			"\t\tthis.pool = pool;",
-			"\t\tthis.group = pool.getGroup(entitas.Matcher.allOf(entitas.Matcher.${2}));",
+			"\t\tthis.pool = pool",
+			"\t\tthis.group = pool.getGroup(entitas.Matcher.allOf(entitas.Matcher.${2}))",
 			"\t}",
 			"\tpublic initialize() {",
 			"\t}",
 			"\tpublic execute() {",
-			"\t\tvar entities = this.group.getEntities();",
+			"\t\tvar entities = this.group.getEntities()",
 			"\t\tfor (var i = 0, l = entities.length; i < l; i++) {",
-			"\t\t\tvar e = entities[i];",
+			"\t\t\tvar e = entities[i]",
 			"\t\t\t\t//TODO:",
 			"\t\t}",
 			"\t}",

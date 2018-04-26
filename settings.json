@@ -38,4 +38,7 @@
         "Module"
     ],
     "workbench.startupEditor": "none",
+    "css.remoteStyleSheets": [
+        "D:/AmazingGame/tool_svn/web/tests_fox/bootstrap-4.0.0/css/bootstrap.css"
+    ],
 }
