@@ -81,7 +81,7 @@
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+b",
+        "key": "alt+b",
         "command": "workbench.action.tasks.runTask"
     },
     {
@@ -150,5 +150,13 @@
     {
         "key": "ctrl+shift+oem_3",
         "command": "-workbench.action.terminal.new"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
     }
 ]
