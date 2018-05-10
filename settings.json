@@ -23,11 +23,6 @@
     "window.openFilesInNewWindow": "off",
     "window.title": "${rootName}",
     "files.eol": "\n",
-    "workbench.colorTheme": "Default Light+",
-    "python.disablePromptForFeatures": [
-        "pylint"
-    ],
-    "move-imports.warnAboutSameContentFiles": false,
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
     "files.autoGuessEncoding": true,
     "workbench.editor.tabSizing": "shrink",
@@ -38,8 +33,8 @@
         "Module"
     ],
     "workbench.startupEditor": "none",
-    "css.remoteStyleSheets": [
-        "D:/AmazingGame/tool_svn/web/tests_fox/bootstrap-4.0.0/css/bootstrap.css"
-    ],
     "extensions.ignoreRecommendations": false,
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.editor.revealIfOpen": true,
 }

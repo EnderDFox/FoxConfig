@@ -81,7 +81,7 @@
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "alt+b",
+        "key": "ctrl+shift+b",
         "command": "workbench.action.tasks.runTask"
     },
     {
