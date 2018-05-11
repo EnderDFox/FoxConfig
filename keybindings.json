@@ -148,15 +148,69 @@
         "command": "workbench.action.terminal.new"
     },
     {
-        "key": "ctrl+shift+oem_3",
-        "command": "-workbench.action.terminal.new"
-    },
-    {
         "key": "ctrl+alt+p",
         "command": "workbench.action.tasks.build"
     },
     {
         "key": "ctrl+shift+b",
         "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.extension.togglePreview",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "-markdown.extension.togglePreviewToSide",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "-jsonToTs.fromClipboard"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "-jsonToTs.fromSelection"
+    },
+    {
+        "key": "ctrl+alt+v e",
+        "command": "-clipboard.editClipboard",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+v d",
+        "command": "-clipboard.removeFromClipboard",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "workbench.view.debug"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.debug"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.showPreview",
+        "when": "editorLangId == 'markdown'"
     }
 ]
