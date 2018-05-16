@@ -1,8 +1,8 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "editor.codeLens": false,
     "window.menuBarVisibility": "default",
-    "editor.autoClosingBrackets": true,
+    "editor.autoClosingBrackets": false,
     "editor.showFoldingControls": "always",
     "editor.mouseWheelZoom": true,
     "workbench.editor.enablePreview": false,
