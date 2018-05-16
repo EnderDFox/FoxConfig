@@ -76,6 +76,14 @@
 		],
 		"description": ""
 	},
+	"array function":{
+		"prefix": "af",
+		"body": [
+			"(${1})=>{",
+			"}${0}"
+		],
+		"description": "callback"
+	},
 	"callback": {
 		"prefix": "cb",
 		"body": [

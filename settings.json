@@ -2,7 +2,7 @@
     "window.zoomLevel": 0,
     "editor.codeLens": false,
     "window.menuBarVisibility": "default",
-    "editor.autoClosingBrackets": false,
+    "editor.autoClosingBrackets": true,
     "editor.showFoldingControls": "always",
     "editor.mouseWheelZoom": true,
     "workbench.editor.enablePreview": false,
