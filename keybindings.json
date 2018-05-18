@@ -212,5 +212,9 @@
         "key": "ctrl+shift+v",
         "command": "-markdown.showPreview",
         "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+n",
+        "command": "workbench.action.selectIconTheme"
     }
 ]

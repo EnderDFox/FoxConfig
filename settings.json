@@ -34,7 +34,8 @@
     ],
     "workbench.startupEditor": "none",
     "extensions.ignoreRecommendations": false,
-    "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.editor.revealIfOpen": true,
+    "markdown.extension.showExplorer": false,
 }
