@@ -30,7 +30,7 @@
         "command": "workbench.action.gotoLine"
     },
     {
-        "key": "ctrl+e",
+        "key": "ctrl+shift+e",
         "command": "workbench.action.debug.start",
         "when": "!inDebugMode"
     },
@@ -216,5 +216,28 @@
     {
         "key": "alt+n",
         "command": "workbench.action.selectIconTheme"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.debug.restart",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "ctrl+shift+f5",
+        "command": "-workbench.action.debug.restart",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "alt+b",
+        "command": "-extension.openInBrowser"
+    },
+    {
+        "key": "shift+alt+b",
+        "command": "-extension.openInSpecifyBrowser"
     }
 ]

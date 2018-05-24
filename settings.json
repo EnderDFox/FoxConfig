@@ -30,12 +30,12 @@
     "go.useCodeSnippetsOnFunctionSuggest": true,
     "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
     "symbolOutline.expandNodes": [
-        "Module"
+        "Module","Class"
     ],
     "workbench.startupEditor": "none",
     "extensions.ignoreRecommendations": false,
-    "workbench.colorTheme": "Monokai Pro",
     "workbench.iconTheme": "vscode-icons",
     "workbench.editor.revealIfOpen": true,
     "markdown.extension.showExplorer": false,
+    "workbench.colorTheme": "Monokai Pro",
 }

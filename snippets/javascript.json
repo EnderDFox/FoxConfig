@@ -121,9 +121,9 @@
 	"fori": {
 		"prefix": "fori",
 		"body": [
-			"var len = ${2:array}.length",
-			"for (var ${1:i} = 0; ${1:i} < len; ${1:i}++) {",
-			"\tvar ${3:item} = ${2:array}[${1:i}];",
+			"var len = ${1:array}.length",
+			"for (var ${2:i} = 0; ${2:i} < len; ${2:i}++) {",
+			"\tvar ${3:item} = ${1:array}[${2:i}];",
 			"\t${3:item}${0}",
 			"}"
 		],
@@ -132,8 +132,8 @@
 	"forr": {
 		"prefix": "forr",
 		"body": [
-			"for (var ${1:i} = ${2:array}.length-1; ${1:i} >=0; ${1:i}--) {",
-			"\tvar ${3:item} =  ${2:array}[${1:i}];",
+			"for (var ${2:i} = ${1:array}.length-1; ${2:i} >=0; ${2:i}--) {",
+			"\tvar ${3:item} =  ${1:array}[${2:i}];",
 			"\t${3:item}${0}",
 			"}"
 		],
@@ -142,9 +142,9 @@
 	"forij": {
 		"prefix": "forij",
 		"body": [
-			"for (var ${1:i} = 0; ${1:i} < ${2:array}.length; ${1:i}++) {",
-			"\tfor (var ${3:j} = 0; ${3:j} < ${2:array}[i].length; ${3:j}++) {",
-			"\t\tvar ${4:item} = ${2:array}[${1:i}][${3:j}];",
+			"for (var ${2:i} = 0; ${2:i} < ${1:array}.length; ${2:i}++) {",
+			"\tfor (var ${3:j} = 0; ${3:j} < ${1:array}[i].length; ${3:j}++) {",
+			"\t\tvar ${4:item} = ${1:array}[${2:i}][${3:j}];",
 			"\t\t${4:item}${0}",
 			"\t}",
 			"}"
@@ -207,7 +207,7 @@
 	"ValueOfVars": {
 		"prefix": "vov",
 		"body": [
-			"${1},\"<-`${1}`\"${0}"
+			"${1},\":[${1}]\"${0}"
 		],
 		"description": ""
 	},
