@@ -112,18 +112,8 @@
         "command": "-editor.action.startFindReplaceAction"
     },
     {
-        "key": "ctrl+q",
-        "command": "extension.goBack",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "ctrl+oem_minus",
         "command": "-extension.goBack",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+q",
-        "command": "extension.goForward",
         "when": "editorTextFocus"
     },
     {
@@ -239,5 +229,29 @@
     {
         "key": "shift+alt+b",
         "command": "-extension.openInSpecifyBrowser"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "gotoLastEdit.goBack",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+oem_minus",
+        "command": "-gotoLastEdit.goBack",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+q",
+        "command": "gotoLastEdit.goForward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+oem_plus",
+        "command": "-gotoLastEdit.goForward",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+d",
+        "command": "beautify.format"
     }
 ]
