@@ -373,4 +373,25 @@
 		],
 		"description": ""
 	},
+	"HTMLElement":{
+		"prefix": "HE",
+		"body": [
+			"HTMLElement"
+		],
+		"description": ""
+	},
+	"HTMLInputElement":{
+		"prefix": "HIE",
+		"body": [
+			"HTMLInputElement"
+		],
+		"description": ""
+	},
+	"JQuery.Event":{
+		"prefix": "JE",
+		"body": [
+			"JQuery.Event"
+		],
+		"description": ""
+	}
 }
