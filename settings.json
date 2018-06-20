@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "editor.codeLens": false,
     "window.menuBarVisibility": "default",
     "editor.autoClosingBrackets": true,
@@ -24,7 +24,7 @@
     "window.title": "${rootName}",
     "files.eol": "\n",
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\cmd.exe",
-    "files.autoGuessEncoding": true,
+    "files.autoGuessEncoding": false,
     "workbench.editor.tabSizing": "shrink",
     "typescript.useCodeSnippetsOnMethodSuggest": true,
     "go.useCodeSnippetsOnFunctionSuggest": true,
@@ -38,4 +38,7 @@
     "workbench.editor.revealIfOpen": true,
     "markdown.extension.showExplorer": false,
     "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "[go]": {
+    },
+    "files.encoding": "utf8",
 }

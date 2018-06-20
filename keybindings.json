@@ -253,5 +253,14 @@
     {
         "key": "shift+alt+d",
         "command": "beautify.format"
+    },
+    {
+        "key": "ctrl+oem_5",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+oem_5",
+        "command": "-workbench.action.terminal.split",
+        "when": "terminalFocus"
     }
 ]
