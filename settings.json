@@ -41,4 +41,5 @@
     "[go]": {
     },
     "files.encoding": "utf8",
+    "go.autocompleteUnimportedPackages": true,
 }
