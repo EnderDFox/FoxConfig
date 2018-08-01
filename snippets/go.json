@@ -18,5 +18,47 @@
 			"${1},\":[${1}]\"${0}"
 		],
 		"description": ""
-	}
+	},
+	"log.debug": {
+		"prefix": "log.debug",
+		"body": [
+			"log.Println(\"[log]\",$0)"
+		],
+		"description": "log.Println"
+	},
+	"uint64": {
+		"prefix": "u6",
+		"body": [
+			"uint64"
+		],
+		"description": ""
+	},
+	"uint32": {
+		"prefix": "u3",
+		"body": [
+			"uint32"
+		],
+		"description": ""
+	},
+	"int64": {
+		"prefix": "i6",
+		"body": [
+			"int64"
+		],
+		"description": ""
+	},
+	"int32": {
+		"prefix": "i3",
+		"body": [
+			"int32"
+		],
+		"description": ""
+	},
+	"Comment":{
+		"prefix": "/",
+		"body": [
+			"/** ${0} */"
+		],
+		"description": ""
+	},
 }
