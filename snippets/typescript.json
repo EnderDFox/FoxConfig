@@ -76,11 +76,12 @@
 		],
 		"description": ""
 	},
-	"arrow function":{
+	"arrow function": {
 		"prefix": "af",
 		"body": [
 			"(${1})${2}=>${3}{",
-			"}${0}"
+			"\t${0}",
+			"}",
 		],
 		"description": "callback"
 	},
@@ -356,7 +357,14 @@
 		],
 		"description": ""
 	},
-	"T_System":{
+	"Entity": {
+		"prefix": "en",
+		"body": [
+			"Entity"
+		],
+		"description": ""
+	},
+	"T_System": {
 		"prefix": "t_system",
 		"body": [
 			"class ${1}System implements ISetPool, IInitializeSystem, IExecuteSystem {",
@@ -379,31 +387,44 @@
 		],
 		"description": ""
 	},
-	"HTMLElement":{
+	"HTMLElement": {
 		"prefix": "HE",
 		"body": [
 			"HTMLElement"
 		],
 		"description": ""
 	},
-	"HTMLInputElement":{
+	"HTMLInputElement": {
 		"prefix": "HIE",
 		"body": [
 			"HTMLInputElement"
 		],
 		"description": ""
 	},
-	"JQuery.Event":{
+	"JQuery.Event": {
 		"prefix": "JE",
 		"body": [
 			"JQuery.Event"
 		],
 		"description": ""
 	},
-	"Comment":{
+	"Comment": {
 		"prefix": "/",
 		"body": [
 			"/** ${0} */"
+		],
+		"description": ""
+	},
+	"Template ns class": {
+		"prefix": "t_c",
+		"body": [
+			"namespace card {",
+			"\texport class ${1:name} {",
+			"\t\tInit(){",
+			"\t\t\t${0}",
+			"\t\t}",
+			"\t}",
+			"}",
 		],
 		"description": ""
 	},
