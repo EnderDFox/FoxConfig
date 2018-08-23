@@ -358,7 +358,7 @@
 		"description": ""
 	},
 	"Entity": {
-		"prefix": "en",
+		"prefix": "et",
 		"body": [
 			"Entity"
 		],
@@ -367,20 +367,19 @@
 	"T_System": {
 		"prefix": "t_system",
 		"body": [
-			"class ${1}System implements ISetPool, IInitializeSystem, IExecuteSystem {",
-			"\tprotected pool: entitas.Pool",
-			"\tprotected group: entitas.Group",
-			"\tpublic setPool(pool: entitas.Pool) {",
+			"export class ${1}System {",
+			"\tprotected pool: Pool",
+			"\tprotected group: Group",
+			"\tpublic setPool(pool: Pool) {",
 			"\t\tthis.pool = pool",
-			"\t\tthis.group = pool.getGroup(entitas.Matcher.allOf(entitas.Matcher.${2}))",
+			"\t\tthis.group = pool.GetGroupAllOf(Matcher.${2})",
 			"\t}",
-			"\tpublic initialize() {",
-			"\t}",
+			"\tpublic initialize() {\t\t}",
 			"\tpublic execute() {",
-			"\t\tvar entities = this.group.getEntities()",
-			"\t\tfor (var i = 0, l = entities.length; i < l; i++) {",
-			"\t\t\tvar e = entities[i]",
-			"\t\t\t\t//TODO:",
+			"\t\tvar ens = this.group.getEntities()",
+			"\t\tfor (var i = 0, l = ens.length; i < l; i++) {",
+			"\t\t\tvar et = ens[i]",
+			"\t\t\t//TODO:",
 			"\t\t}",
 			"\t}",
 			"}"

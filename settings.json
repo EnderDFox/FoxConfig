@@ -42,4 +42,5 @@
     },
     "files.encoding": "utf8",
     "go.autocompleteUnimportedPackages": true,
+    "search.location": "sidebar",
 }
