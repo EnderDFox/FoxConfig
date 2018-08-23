@@ -368,10 +368,10 @@
 		"prefix": "t_system",
 		"body": [
 			"export class ${1}System {",
-			"\tprotected pool: Pool",
+			"\tprotected Pool: Pool",
 			"\tprotected group: Group",
 			"\tpublic setPool(pool: Pool) {",
-			"\t\tthis.pool = pool",
+			"\t\tthis.Pool = pool",
 			"\t\tthis.group = pool.GetGroupAllOf(Matcher.${2})",
 			"\t}",
 			"\tpublic initialize() {\t\t}",
