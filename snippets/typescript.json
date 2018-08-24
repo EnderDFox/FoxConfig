@@ -358,7 +358,7 @@
 		"description": ""
 	},
 	"T_System": {
-		"prefix": "t_system",
+		"prefix": "t.system",
 		"body": [
 			"export class ${1}System {",
 			"\tprotected Pool: Pool",
@@ -407,16 +407,41 @@
 		],
 		"description": ""
 	},
-	"Template ns class": {
-		"prefix": "t_c",
+	"tpl if(false)": {
+		"prefix": "t.if.false",
 		"body": [
-			"namespace card {",
+			"if(!${1}){",
+			"\t//TODO: ${0}",
+			"\treturn",
+			"}"
+		],
+		"description": ""
+	},
+	"Template HT.Fight class": {
+		"prefix": "t.class",
+		"body": [
+			"namespace HT.Fight {",
 			"\texport class ${1:name} {",
 			"\t\tInit(){",
 			"\t\t\t${0}",
 			"\t\t}",
 			"\t}",
 			"}",
+		],
+		"description": ""
+	},
+	"HT.Fight.Scene": {
+		"prefix": "t.scene",
+		"body": [
+			"var scene = Facade.SI.Fight.Scene"
+		],
+		"description": ""
+	},
+	"Grid": {
+		"prefix": "t.grid",
+		"body": [
+			"var scene = Facade.SI.Fight.Scene",
+			"var grid = scene.Grid"
 		],
 		"description": ""
 	},
