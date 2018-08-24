@@ -219,13 +219,6 @@
 		],
 		"description": ""
 	},
-	"map": {
-		"prefix": "map",
-		"body": [
-			"{[key:${1:number|string}]:${0}} = {}"
-		],
-		"description": ""
-	},
 	"public method": {
 		"prefix": "pm",
 		"body": [
@@ -322,17 +315,17 @@
 		],
 		"description": ""
 	},
-	"dic": {
+	/* 	"dic": {
 		"prefix": "dic",
 		"body": [
 			"{ [key: ${1:number|string}]: ${2} }${0}"
 		],
 		"description": ""
-	},
+	}, */
 	"map": {
 		"prefix": "map",
 		"body": [
-			"{ [key: ${1:number|string}]: ${2} }${0}"
+			"{[key:${1:number|string}]:${0}} = {}"
 		],
 		"description": ""
 	},
